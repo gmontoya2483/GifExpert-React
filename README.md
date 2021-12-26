@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Description
+
+Web app, which was developed with REACT, that fetches images from [GIPHY](https://developers.giphy.com/).  
+Link to [GifExpert](https://gmontoya2483.github.io/GifExpert-React/)
 ## Available Scripts
 
 In the project directory, you can run:

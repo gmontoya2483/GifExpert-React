@@ -7,13 +7,14 @@ const AddCategory = ({ setCategories }) => {
 
     const handleInputChange = ( e ) => {
         setInputValue(e.target.value);
+        // console.log('HandleInputChange llamado');
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Submit hecho');
+        // console.log('Submit hecho', inputValue);
 
-        if( inputValue.trim().length > 3 ) {
+        if( inputValue.trim().length > 2 ) {
             setCategories((cats) => [inputValue.trim(), ...cats ]);
             setInputValue('');
         }
@@ -22,6 +23,7 @@ const AddCategory = ({ setCategories }) => {
 
     return (
             <form onSubmit={handleSubmit}>
+                <p>{ inputValue }</p>
                 <input
                     type="text"
                     value={ inputValue }
